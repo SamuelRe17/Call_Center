@@ -1,0 +1,95 @@
+.dashboard-view {
+  &-toolbar {
+    background-color: #ffffff !important;
+    color: var(--q-positive) !important;
+  }
+
+  &-toolbar-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    > .information {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      > .date {
+        font-size: 12px;
+        margin: 5px;
+      }
+    }
+  }
+
+  &-account-container {
+    display: flex;
+
+    > .user {
+      display: flex;
+      flex-direction: column;
+      margin-right: 12px;
+
+      > .role {
+        color: #ffffff;
+      }
+    }
+
+    > .dropdown-btn {
+      padding: 10px 8px;
+    }
+  }
+
+  &__item {
+    font-family: "Meta Pro Regular";
+    color: var(--q-primary) !important;
+  }
+}
+
+.mini-icon {
+  font-size: 1.718em;
+}
+
+//Responsive Design
+@media only screen and (max-width: 560px) {
+  .dashboard-view {
+    &-toolbar {
+      > .hamburger {
+        display: block;
+      }
+    }
+
+    &-toolbar-container {
+      > .information {
+        > .date {
+          display: none;
+        }
+      }
+    }
+
+    &-account-container {
+      > .user {
+        display: none;
+      }
+
+      > .image {
+        display: none;
+      }
+    }
+
+    &-separator {
+      display: none;
+    }
+  }
+}
+
+.hide-icon .icon {
+  display: none;
+}
+
+.reloj {
+  display: inline-flex;
+}
+#mi-id-unico {
+  width: 300px !important;
+}
